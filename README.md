@@ -22,6 +22,7 @@ I decided to learn a bit of React by creating an online Markdown editor.
 ## Features 💥
 - Github Markdown formatting using [marked](https://github.com/chjj/marked)
 - Code highlighting using [highlight.js](https://github.com/isagalaev/highlight.js/)
+- Persistence using [local storage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage)
 - Simple AF ☄️
 
 ## Development ✨
