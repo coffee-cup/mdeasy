@@ -10,7 +10,7 @@ class App extends Component {
                             {"¯\_(ツ)_/¯"}
                         </h1>
                         <h2 className="f3 mb0 near-black">
-                            404 Page not found. <a href="/"> Go home.</a>
+                            404 Page not found. <a href="/"> Go home</a>.
                         </h2>
                     </div>
                 </div>
