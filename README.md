@@ -17,6 +17,8 @@ mdeasy
 
 I decided to learn a bit of React by creating an online Markdown editor.
 
+[Website can be found here!](https://mdeasy.surge.sh/)
+
 ## Features 💥
 - Github Markdown formatting using [marked](https://github.com/chjj/marked)
 - Code highlighting using [highlight.js](https://github.com/isagalaev/highlight.js/)
