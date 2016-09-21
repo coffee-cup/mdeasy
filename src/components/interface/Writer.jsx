@@ -79,11 +79,11 @@ class Writer extends Component {
         const { editorState } = this.state;
         return (
             <div className="writer fill" onClick={ this.onClick.bind(this) }>
-                <div className="header-title bg-red pv2 ph4">
+                <div className="header-title bg-red pv2 ph4-ns ph3">
                     <h2 className="f3 near-black">Write markdown here,</h2>
                 </div>
 
-                <div className="editor fill bg-near-white pa4">
+                <div className="editor fill bg-near-white pa4-ns pa3">
                     <Editor suppressContentEditableWarning
                         editorState={ editorState }
                         placeholder={ '# Hello World' }

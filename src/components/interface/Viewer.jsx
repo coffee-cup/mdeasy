@@ -33,11 +33,11 @@ class Viewer extends Component {
         const { text } = this.props;
         return (
             <div className="viewer fill">
-                <div className="header-title bg-red pv2 ph4">
+                <div className="header-title bg-red pv2 ph4-ns ph3">
                     <h2 className="f3 near-black">and it shows up here...</h2>
                 </div>
 
-                <div className="markdown-body pa4">
+                <div className="markdown-body pa4-ns pa3">
                     {this.renderHtmlView(text)}
                 </div>
             </div>
