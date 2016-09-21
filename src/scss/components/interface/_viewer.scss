@@ -4,10 +4,18 @@
     }
 }
 
-.markdown-view {
-    h1, h2, h3, h4, h6, p {
-        &:first-child {
-            margin-top: 0;
-        }
-    }
-}
+// .markdown-body {
+//     h1, h2, h3, h4, h6, p {
+//         &:first-child {
+//             margin-top: 0;
+//         }
+//     }
+
+//     a,a:visited {
+//         text-decoration: underline;
+//     }
+
+//     a:hover {
+//         color: $red;
+//     }
+// }

@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 
 import marked from 'marked';
+import highlight from 'highlight.js';
 
 class Viewer extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-
-        };
+        marked.setOptions({
+            highlight: (code) => {
+                return highlight.highlightAuto(code).value;
+            }
+        });
     }
 
     convertToMarkdown(text) {
@@ -34,7 +37,7 @@ class Viewer extends Component {
                     <h2 className="f3 near-black">and it shows up here...</h2>
                 </div>
 
-                <div className="pa4 markdown-view">
+                <div className="markdown-body pa4">
                     {this.renderHtmlView(text)}
                 </div>
             </div>
