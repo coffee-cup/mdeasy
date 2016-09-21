@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import Draft, { Editor, EditorState } from 'draft-js';
+import Draft, { Editor, EditorState, ContentState } from 'draft-js';
 import CodeUtils from 'draft-js-code';
 
 class Writer extends Component {
     constructor(props) {
         super(props);
+
+        const text = props.text || '';
         this.state = {
-            editorState: EditorState.createEmpty()
+            editorState: this.editorFromText(text)
         };
+    }
+
+    editorFromText(text) {
+        return EditorState.createWithContent(ContentState.createFromText(text));
+    }
+
+    setContent(text) {
+        this.setState({
+            editorState: this.editorFromText(text)
+        });
     }
 
     onChange(editorState) {
@@ -19,6 +31,10 @@ class Writer extends Component {
     }
 
     onClick() {
+        this._editor.focus();
+    }
+
+    focus() {
         this._editor.focus();
     }
 
