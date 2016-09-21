@@ -1,0 +1,10 @@
+header {
+    h1,
+    h2 {
+        color: $text-light;
+    }
+}
+
+.header-content {
+    border-left: solid 4px $accent-colour;
+}

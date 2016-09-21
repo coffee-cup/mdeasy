@@ -1,0 +1,99 @@
+@import 'normalize';
+@import 'queries';
+@import 'sass-css3-mixins';
+@import './css/animate.css';
+@import './css/tachyons.css';
+@import 'fonts';
+@import 'variables';
+@import 'gridlex';
+@import 'utils';
+
+@import 'components/components';
+
+// :)
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $sans;
+    font-weight: $normal;
+
+    overflow-x: hidden;
+
+    color: $text-dark;
+    /* Better Font Rendering =========== */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-weight: $ultra-light;
+
+    color: $text-dark;
+}
+
+h2 {
+    font-weight: $light;
+
+    color: $text-dark;
+}
+
+p {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+
+    color: $text-dark;
+}
+
+a,
+a:visited {
+    transition: $s-animation;
+    text-decoration: none;
+
+    color: $text-dark;
+}
+
+a:hover {
+    transition: $s-animation;
+    text-decoration: underline;
+
+    color: $accent-colour;
+}
+
+a.under {
+    text-decoration: under;
+}
+
+a.none,
+a.none:hover {
+    text-decoration: none;
+}
+
+.full {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    margin: 0;
+}
+
+.app {
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    min-height: 95vh;
+    margin: 0;
+}

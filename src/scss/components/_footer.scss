@@ -1,0 +1,16 @@
+footer {
+    background-color: $lightgrey;
+    p {
+        color: $text-dark;
+    }
+    a,
+    a:visited {
+        text-decoration: none;
+
+        color: $main-colour;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
