@@ -26,11 +26,14 @@ class Writer extends Component {
         const { value } = this.state;
         return (
             <div className="writer fill" onClick={ this.onClick.bind(this) }>
-                <h2 className="f2">Editor</h2>
-                <div className="editor">
+                <div className="header-title bg-red pv2 ph4">
+                    <h2 className="f3 near-black">Write markdown here,</h2>
+                </div>
+
+                <div className="editor fill bg-near-white br b--red bw2 pa4">
                     <Editor suppressContentEditableWarning
                         editorState={ value }
-                        placeholder={ 'Write here...' }
+                        placeholder={ '# Hello World' }
                         onChange={ this.onChange.bind(this) }
                         ref={(e) => this._editor = e} />
                 </div>

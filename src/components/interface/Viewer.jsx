@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import marked from 'marked';
+
 class Viewer extends Component {
     constructor(props) {
         super(props);
@@ -10,17 +12,30 @@ class Viewer extends Component {
     }
 
     convertToMarkdown(text) {
-        return text;
+        const html = marked(text);
+        return {
+            __html: html
+        };
+    }
+
+    renderHtmlView(text) {
+        if (!text || text === '') {
+            return <h1>Hello World</h1>;
+        }
+
+        return <div dangerouslySetInnerHTML={this.convertToMarkdown(text)} />;
     }
 
     render() {
         const { text } = this.props;
         return (
             <div className="viewer fill">
-                <h2 className="f2">Viewer</h2>
+                <div className="header-title bg-red pv2 ph4">
+                    <h2 className="f3 near-black">and it shows up here...</h2>
+                </div>
 
-                <div className="markdown-view">
-                    {this.convertToMarkdown(text)}
+                <div className="pa4 markdown-view">
+                    {this.renderHtmlView(text)}
                 </div>
             </div>
         );

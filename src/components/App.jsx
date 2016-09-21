@@ -7,7 +7,7 @@ import Interface from './interface/Interface.jsx';
 class App extends Component {
     render() {
         return (
-            <div className="main mw100">
+            <div className="main mw100 full">
 
                 <Interface />
 

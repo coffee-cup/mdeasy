@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Sidebar from './Sidebar.jsx';
+// import Sidebar from './Sidebar.jsx';
 import Writer from './Writer.jsx';
 import Viewer from './Viewer.jsx';
 
@@ -29,15 +29,11 @@ class Interface extends Component {
             <div className="interface full">
                 <div className="grid-noGutter full">
 
-                    <div className="fl w-20 pv2 pa4 bg-green">
-                        <Sidebar />
-                    </div>
-
-                    <div className="fl w-40 pv2 pa4 bg-blue">
+                    <div className="col-6_xs-12 bg-light-grey">
                         <Writer onChange={this.onTextChange.bind(this)} />
                     </div>
 
-                    <div className="fl w-40 pv2 pa4 bg-red">
+                    <div className="col-6_xs-12 bg-white">
                         <Viewer text={text} />
                     </div>
 
