@@ -9,7 +9,7 @@ import './scss/styles.scss';
 import App from './components/App.jsx';
 import NotFound from './components/NotFound.jsx';
 
-// ga.initialize('GA CODE HERE');
+ga.initialize('UA-84545816-1');
 
 function logPageView() {
     ga.pageview(window.location.pathname);
