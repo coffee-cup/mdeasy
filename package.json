@@ -1,7 +1,7 @@
 {
-  "name": "uvic-software-website",
+  "name": "mdeasy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple markdown editor + viewer",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=dev webpack-dev-server --hot --inline --progress",
@@ -12,7 +12,7 @@
     "prebuild": "npm run clean",
     "postbuild": "npm run copy",
     "predeploy": "npm run build",
-    "deploy": "surge build/ ..."
+    "deploy": "surge build/ https://mdeasy.surge.sh"
   },
   "author": [
     "Jake Runzer <jakerunzer@gmail.com> (https://jakerunzer.xyz)"
