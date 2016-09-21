@@ -1,4 +1,7 @@
 .editor {
+    @include break(not-tiny) {
+        border-right: solid 4px $red;
+    }
 }
 
 /**

@@ -35,6 +35,11 @@
             @content;
         }
     }
+    @else if $point == not-tiny {
+        @media screen and (min-width: 35.5em) {
+            @content;
+        }
+    }
     @else if $point == not-small {
         @media screen and (min-width: 48em) {
             @content;

@@ -30,7 +30,7 @@ class Writer extends Component {
                     <h2 className="f3 near-black">Write markdown here,</h2>
                 </div>
 
-                <div className="editor fill bg-near-white br b--red bw2 pa4">
+                <div className="editor fill bg-near-white pa4">
                     <Editor suppressContentEditableWarning
                         editorState={ value }
                         placeholder={ '# Hello World' }

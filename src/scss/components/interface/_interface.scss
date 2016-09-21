@@ -1,3 +1,7 @@
 @import 'sidebar';
 @import 'writer';
 @import 'viewer';
+
+.interface {
+    overflow-y: hidden;
+}
