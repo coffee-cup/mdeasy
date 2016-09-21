@@ -3,11 +3,14 @@ footer {
     p {
         color: $text-dark;
     }
+    .heart {
+        color: $red;
+    }
     a,
     a:visited {
         text-decoration: none;
 
-        color: $main-colour;
+        color: $red;
     }
 
     a:hover {
