@@ -1,7 +1,10 @@
 .editor {
-    @include break(not-tiny) {
-        border-right: solid 4px $red;
-    }
+    line-height: $base-line-height;
+
+    max-width: 40rem;
+    margin: auto;
+
+    cursor: text;
 }
 
 /**
@@ -9,15 +12,21 @@
  */
 
 .public-DraftEditorPlaceholder-root {
-  color: var(fbui-desktop-text-placeholder);
-  position: absolute;
-  z-index: 0;
+    position: absolute;
+    z-index: 0;
+
+    color: var(fbui-desktop-text-placeholder);
 }
 
 .public-DraftEditorPlaceholder-hasFocus {
-  color: var(fbui-desktop-text-placeholder-focused);
+    color: var(fbui-desktop-text-placeholder-focused);
 }
 
 .DraftEditorPlaceholder-hidden {
-  display: none;
+    display: none;
+}
+
+.DraftEditor-root {
+    max-width: 40rem;
+    margin: auto;
 }

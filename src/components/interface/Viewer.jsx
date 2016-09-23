@@ -37,7 +37,7 @@ class Viewer extends Component {
                     <h2 className="f3 near-black">and it shows up here...</h2>
                 </div>
 
-                <div className="markdown-body pa4-ns pa3">
+                <div className="markdown-copy pa4-ns pa3">
                     {this.renderHtmlView(text)}
                 </div>
             </div>

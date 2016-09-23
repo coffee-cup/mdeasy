@@ -1,9 +1,8 @@
 // Google Font
-// @import 'https://fonts.googleapis.com/css?family=Playfair+Display';
-
-$sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+$sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $serif: serif;
-$mono: Consolas, monaco, monospace;
+$mono: 'Source Code Pro', Consolas, monaco, monospace;
 
 // EXAMPLE
 

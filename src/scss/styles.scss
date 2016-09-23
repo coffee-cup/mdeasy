@@ -11,7 +11,8 @@
 @import 'components/components';
 
 // Markdown styles!
-@import './css/github-markdown.css';
+// @import './css/github-markdown';
+@import 'markdown';
 @import './css/highlight.css';
 
 // :)
@@ -57,6 +58,10 @@ p {
     line-height: $base-line-height;
 
     color: $text-dark;
+}
+
+code {
+    font-family: $mono;
 }
 
 a,

@@ -38,19 +38,25 @@ class Interface extends Component {
         localStorage.setItem(textKey, text);
     }
 
+    // When the writer is clicked, focus the editor
+    onWriterClick() {
+        console.log('click');
+        this._writer.focus();
+    }
+
     render() {
         const { text } = this.state;
         return (
             <div className="interface full">
                 <div className="grid-noGutter full">
 
-                    <div className="col-6_xs-12 bg-light-grey">
+                    <div className="col-6_xs-12 bg-near-black pointer" onClick={this.onWriterClick.bind(this)}>
                         <Writer
                             onChange={this.onTextChange.bind(this)}
                             ref={(w) => this._writer = w}/>
                     </div>
 
-                    <div className="col-6_xs-12 bg-white">
+                    <div className="col-6_xs-12 bg-near-white">
                         <Viewer
                             text={text} />
                     </div>
